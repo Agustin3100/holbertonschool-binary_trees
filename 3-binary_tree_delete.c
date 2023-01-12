@@ -1,4 +1,9 @@
 #include "binary_trees.h"
+/**
+ * binary_tree_delete - inserts a node as the right-child of another node
+ * @tree: the number of integers passed to function
+ * Return: void
+ */
 void binary_tree_delete(binary_tree_t *tree)
 {
 	if (!tree)
@@ -6,12 +11,8 @@ void binary_tree_delete(binary_tree_t *tree)
 		return;
 	}
 
-
-	if (tree)
+	else if (tree)
 	{
-		binary_tree_delete(tree);
-		free(tree);	
+		free(tree);
 	}
-
-
 }
